@@ -15,7 +15,7 @@ public class Consumer extends Thread {
 		while (true) {
 			c.consume_item();
 			try {
-				Thread.sleep(1000);
+				Thread.sleep(2000);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
