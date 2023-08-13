@@ -13,10 +13,10 @@ public class Consumer extends Thread {
 	public void run() {
 
 		while (true) {
-			c.consume_item();
 			try {
+				c.consume_item();
 				Thread.sleep(2000);
-			} catch (InterruptedException e) {
+			} catch (Exception e) {
 				e.printStackTrace();
 			}
 		}

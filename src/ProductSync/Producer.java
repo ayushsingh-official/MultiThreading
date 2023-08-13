@@ -15,11 +15,12 @@ public class Producer extends Thread {
 		int product  = 1;
 		
 		while(true) {
-			c.produce_item(product);
+			
 			
 			try {
+				c.produce_item(product);
 				Thread.sleep(1000);
-			} catch (InterruptedException e) {
+			} catch (Exception e) {
 				e.printStackTrace();
 			}
 			
