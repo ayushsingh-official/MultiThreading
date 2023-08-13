@@ -6,7 +6,7 @@ public class ThreadTwo extends Thread {
 	public void run() {
 
 		for (int i = 10; i >= 0; i--) {
-			System.out.println("ThreadTwo :::::::::  "+i);
+			System.out.println("ThreadTwo :::::::::  " + i);
 
 			try {
 				Thread.sleep(1000);
