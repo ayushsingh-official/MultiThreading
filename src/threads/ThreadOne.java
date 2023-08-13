@@ -7,7 +7,8 @@ public class ThreadOne implements Runnable {
 
 		Thread currentThread = Thread.currentThread();
 		System.out.println("Current  thread 2 : " + currentThread);
-		
+		System.out.println("Current  thread  Name : " + currentThread.getName());
+
 		for(int i=1; i<= 10 ; i++) {
 			System.out.println("ThreadOne : " + i);
 			
