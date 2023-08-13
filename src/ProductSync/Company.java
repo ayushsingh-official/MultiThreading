@@ -2,24 +2,24 @@ package ProductSync;
 
 public class Company {
 
-	String n ; 
+	int n ; 
 	
-	Producer producer;
+//	Producer producer;
+//	
+//	Consumer consumer;
 	
-	Consumer consumer;
+//	public Company(int n) {
+//		super();
+//		this.n = n;
+//	}
 	
-	public Company(String n) {
-		super();
+	public void produce_item( int n) {
 		this.n = n;
+		System.out.println("produces" + n);
 	}
 	
-	public void produce_item(Producer producer , String n) {
-		this.n = n;
-		System.out.println(producer + "produces" + n);
-	}
-	
-	public void consume_item(Consumer consumer , String n) {
-		this.n = n;
-		System.out.println(consumer + "consumer" + n);
+	public void consume_item() {
+		
+		System.out.println("consumer" + this.n);
 	}
 }
