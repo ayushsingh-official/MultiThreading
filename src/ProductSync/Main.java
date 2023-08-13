@@ -10,7 +10,8 @@ public class Main {
 		Producer produce = new Producer(company);
 		Consumer consumer = new Consumer(company);
 	
-		// start will start the run method
+		// start will start the run method if no other thread is available
+		// Runnable State
 		produce.start();
 		consumer.start();
 		

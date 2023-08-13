@@ -8,11 +8,17 @@ public class Consumer extends Thread {
 		super();
 		this.c = c;
 	}
-	
+
 	@Override
 	public void run() {
-		
-		c.consume_item();
-		
+
+		while (true) {
+			c.consume_item();
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
 	}
 }

@@ -16,6 +16,13 @@ public class Producer extends Thread {
 		
 		while(true) {
 			c.produce_item(product);
+			
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			
 			product++;
 			
 		}
